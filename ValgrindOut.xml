@@ -1,0 +1,1625 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: /shared/Dropbox/code/lambda/bin/Debug/lambda</line>
+</preamble>
+
+<pid>25954</pid>
+<ppid>16194</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--leak-check=full</arg>
+    <arg>--track-origins=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/shared/Dropbox/code/lambda/ValgrindOut.xml</arg>
+  </vargv>
+  <argv>
+    <exe>/shared/Dropbox/code/lambda/bin/Debug/lambda</exe>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.291 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>InvalidJump</kind>
+  <what>Jump to the invalid address stated on the next line</what>
+  <stack>
+    <frame>
+      <ip>0xFFF000100</ip>
+    </frame>
+    <frame>
+      <ip>0x4006AD</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>90</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000100 is on thread 1's stack</auxwhat>
+  <auxwhat>200 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CF4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x4006AD</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>90</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff0000f8 is on thread 1's stack</auxwhat>
+  <auxwhat>200 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x2</unique>
+  <tid>1</tid>
+  <kind>InvalidJump</kind>
+  <what>Jump to the invalid address stated on the next line</what>
+  <stack>
+    <frame>
+      <ip>0xFFF000130</ip>
+    </frame>
+    <frame>
+      <ip>0x400CF7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x4006AD</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>90</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000130 is on thread 1's stack</auxwhat>
+  <auxwhat>136 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x3</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CF4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x400CF7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x4006AD</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>90</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000128 is on thread 1's stack</auxwhat>
+  <auxwhat>136 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x4</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CF8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x400CF7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x4006AD</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>90</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000120 is on thread 1's stack</auxwhat>
+  <auxwhat>144 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CF8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x4006AD</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>90</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff0000f0 is on thread 1's stack</auxwhat>
+  <auxwhat>208 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x6</unique>
+  <tid>1</tid>
+  <kind>InvalidJump</kind>
+  <what>Jump to the invalid address stated on the next line</what>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+    <frame>
+      <ip>0x40078C</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>99</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000190 is on thread 1's stack</auxwhat>
+</error>
+
+<error>
+  <unique>0x7</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x40078C</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>99</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x8</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CDE</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x666564636260FFFF</ip>
+    </frame>
+    <frame>
+      <ip>0x323130006A696866</ip>
+    </frame>
+    <frame>
+      <ip>0x39383736353432</ip>
+    </frame>
+    <frame>
+      <ip>0x3EC65BAAF8138EFF</ip>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x9</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x4007B6</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>100</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xb</unique>
+  <tid>1</tid>
+  <kind>InvalidJump</kind>
+  <what>Jump to the invalid address stated on the next line</what>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+    <frame>
+      <ip>0x4007E0</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>101</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000190 is on thread 1's stack</auxwhat>
+</error>
+
+<error>
+  <unique>0xc</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CF4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x4007E0</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>101</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xd</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CFD</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x666564636260FFFF</ip>
+    </frame>
+    <frame>
+      <ip>0x323130006A696866</ip>
+    </frame>
+    <frame>
+      <ip>0x39383736353432</ip>
+    </frame>
+    <frame>
+      <ip>0x3EC65BAAF8138EFF</ip>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400CF8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xe</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CF4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x400807</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>102</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x10</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CF4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x40082E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>103</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x12</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CF4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2697</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x400855</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>104</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x14</unique>
+  <tid>1</tid>
+  <kind>InvalidJump</kind>
+  <what>Jump to the invalid address stated on the next line</what>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+    <frame>
+      <ip>0x40087E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>105</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000190 is on thread 1's stack</auxwhat>
+</error>
+
+<error>
+  <unique>0x15</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x40087E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>105</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x17</unique>
+  <tid>1</tid>
+  <kind>InvalidJump</kind>
+  <what>Jump to the invalid address stated on the next line</what>
+  <stack>
+    <frame>
+      <ip>0xFFF000130</ip>
+    </frame>
+    <frame>
+      <ip>0x40091A</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>110</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000130 is on thread 1's stack</auxwhat>
+  <auxwhat>152 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x18</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40091A</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>110</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000128 is on thread 1's stack</auxwhat>
+  <auxwhat>152 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x19</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40091A</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>110</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000120 is on thread 1's stack</auxwhat>
+  <auxwhat>160 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x1a</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400944</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000128 is on thread 1's stack</auxwhat>
+  <auxwhat>152 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x1b</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400944</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000120 is on thread 1's stack</auxwhat>
+  <auxwhat>160 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x1c</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40096E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>112</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000128 is on thread 1's stack</auxwhat>
+  <auxwhat>152 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x1d</unique>
+  <tid>1</tid>
+  <kind>InvalidJump</kind>
+  <what>Jump to the invalid address stated on the next line</what>
+  <stack>
+    <frame>
+      <ip>0xFFF000160</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40096E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>112</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000160 is on thread 1's stack</auxwhat>
+</error>
+
+<error>
+  <unique>0x1e</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0xFFF00011F</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40096E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>112</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000160</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1f</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0xFFF00014F</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40096E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>112</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x20</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CDE</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0xFFF00011F</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40096E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>112</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x21</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CDE</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x40096E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>112</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x22</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40096E</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>112</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000120 is on thread 1's stack</auxwhat>
+  <auxwhat>160 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x23</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400AFF</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>130</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000128 is on thread 1's stack</auxwhat>
+  <auxwhat>152 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x24</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0xFFF00011F</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400AFF</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>130</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000160</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x25</unique>
+  <tid>1</tid>
+  <kind>InvalidJump</kind>
+  <what>Jump to the invalid address stated on the next line</what>
+  <stack>
+    <frame>
+      <ip>0xFFF000190</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400AFF</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>130</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000190 is on thread 1's stack</auxwhat>
+</error>
+
+<error>
+  <unique>0x27</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CDE</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0xFFF00011F</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400AFF</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>130</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x28</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CDE</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x400AFF</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>130</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x29</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400AFF</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>130</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000120 is on thread 1's stack</auxwhat>
+  <auxwhat>160 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x2a</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400B55</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>134</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000128 is on thread 1's stack</auxwhat>
+  <auxwhat>152 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x2b</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400B55</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>134</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000120 is on thread 1's stack</auxwhat>
+  <auxwhat>160 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x2c</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400B7F</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>135</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000128 is on thread 1's stack</auxwhat>
+  <auxwhat>152 bytes below stack pointer</auxwhat>
+</error>
+
+<error>
+  <unique>0x2d</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD4</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0xFFF00011F</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400B7F</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>135</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0xFFF000160</ip>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x2f</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CDE</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0xFFF00011F</ip>
+    </frame>
+    <frame>
+      <ip>0x400CD7</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400B7F</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>135</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x30</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CDE</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x61</ip>
+    </frame>
+    <frame>
+      <ip>0x400B7F</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>135</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a stack allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x31</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x400CD8</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>__Lambda__.2686</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>lambda.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x400B7F</ip>
+      <obj>/shared/Dropbox/code/lambda/bin/Debug/lambda</obj>
+      <fn>main</fn>
+      <dir>/shared/Dropbox/code/lambda</dir>
+      <file>main_lambda.c</file>
+      <line>135</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000120 is on thread 1's stack</auxwhat>
+  <auxwhat>160 bytes below stack pointer</auxwhat>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:01.365 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x31</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x30</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x2f</unique>
+  </pair>
+  <pair>
+    <count>3</count>
+    <unique>0x1f</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x2d</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x2c</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x2b</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x2a</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x29</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x28</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x27</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x25</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x24</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x23</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x22</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x21</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x20</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x1e</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x1d</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x1c</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x1b</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x1a</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x19</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x18</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x17</unique>
+  </pair>
+  <pair>
+    <count>3</count>
+    <unique>0x8</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x15</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x14</unique>
+  </pair>
+  <pair>
+    <count>4</count>
+    <unique>0xd</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x12</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x10</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xe</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xc</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xb</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x9</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x7</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x6</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x5</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x4</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x3</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x2</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

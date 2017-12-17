@@ -1,11 +1,10 @@
 /* Para ser usado en Computación I y II.
 ** Version 1.24 29/10/2016, Elaborado por: Victor Theoktisto
-** -- specific C macro (needed for preprocessing!) */
+** -- specific C macro (needed for preprocessing!)
+** https://www.gnu.org/licenses/gpl-3.0.en.html
+** Copyright 2014-2016 Victor Theoktisto   */
 
-/* https://www.gnu.org/licenses/gpl-3.0.en.html */
-
-/* Copyright 2014-2016 Victor Theoktisto */
-
+#pragma once
 #ifndef _HOARE_H_INCLUDED_
 #define _HOARE_H_INCLUDED_
 
@@ -27,11 +26,11 @@
     /* Useful definitions */
 enum bool {false=0, FALSE=0, true=~0, TRUE=~0};
 #define and &&
-#define  or ||
+#define or  ||
 #define not !
 #define xor ^
 #define AND &&
-#define  OR ||
+#define OR  ||
 #define NOT !
 #define XOR ^
 #define GLUE(a,b) a##b
@@ -45,26 +44,25 @@ enum bool {false=0, FALSE=0, true=~0, TRUE=~0};
 #define ABS(a) ({__auto_type __a = (a); __a < 0 ? -__a : __a;})
 // Compiler warns when the types of x and y are not compatible
 #define MAX(x, y) ({ \
-    __auto_type __x = (x); __auto_type __y = (y);  \
-    (void) (&__x == &__y); __x > __y ? __x : __y; })
+    __auto_type __x=(x); __auto_type __y=(y); (void)(&__x==&__y); __x>__y ? __x : __y; })
 #define MIN(x, y) ({ \
-    __auto_type __x = (x); __auto_type __y = (y);  \
-    (void) (&__x == &__y); __x < __y ? __x : __y; })
-#define ODD(n) ((n)&1)
+    __auto_type __x=(x); __auto_type __y=(y); (void)(&__x==&__y); __x<__y ? __x : __y; })
+#define ODD(n)  ((n)&1)
 #define EVEN(n) (!((n)&1))
 
     /*--- SWAP failsafe for any size ---*/
-#define SWAP(A,B) \
+#define SWAP(__A,__B) \
     do{ \
-        __auto_type t=A; A=B; B=t; \
+        __auto_type __T=__A; __A=__B; __B=__T; \
     }while(0)
 
-#define SWAPMEM(A,B) \
+    /*--- SWAP failsafe for any size memory blocks---*/
+#define MEMSWAP(__A,__B) \
     do{ \
-        unsigned char tt[sizeof(A)==sizeof(B)?(signed)sizeof(A):-1]; \
-        memcpy(tt, &B, sizeof(A)); \
-        memcpy(&B, &A, sizeof(A)); \
-        memcpy(&A, tt, sizeof(A)); \
+        unsigned char __T[sizeof(__A)==sizeof(__B)?(signed)sizeof(__A):-1]; \
+        memcpy( __T, &__B, sizeof(__A)); \
+        memcpy(&__B, &__A, sizeof(__A)); \
+        memcpy(&__A,  __T, sizeof(__A)); \
     }while(0)
 
     /*--- Is a number a power of two ---*/
@@ -77,6 +75,8 @@ enum bool {false=0, FALSE=0, true=~0, TRUE=~0};
 #define TWOSCOMPLEMENT(x) (((x)^(~0))+1)
     /* SQUARE() macro, final form */
 #define SQUARE(x) (__auto_type t=(x); t*t)
+    /* CUBE() macro, final form */
+#define CUBE(x) (__auto_type t=(x); t*t*t)
     /* fills an integer value with ONES independent of type size */
 #define ALLONES ~0
 
@@ -102,16 +102,16 @@ enum bool {false=0, FALSE=0, true=~0, TRUE=~0};
 #define _assert(Predicate) \
      check_assert("Assertion does not hold for",Predicate)
     /* Precondition (Predicate) */
-#define _pre(Predicate) \
+#define _expects(Predicate) \
     check_assert("Precondition does not hold for",Predicate)
     /* Postcondition (Predicate) */
-#define _post(Predicate) \
+#define _ensures(Predicate) \
     check_assert("Postcondition does not hold for",Predicate)
     /* Invariant (Predicate) */
-#define _inv(Predicate) \
+#define _invariant(Predicate) \
     check_assert("Invariant does not hold for",Predicate)
     /* Precondition (integer expression) */
-#define _bound(IntExpression) \
+#define _bounded(IntExpression) \
     check_assert("Bound does not hold for",(IntExpression)>=0)
 
 #ifdef NDEBUG

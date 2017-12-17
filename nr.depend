@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1479135279 source:/shared/Dropbox/lambda/newton.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"hoare.h"
+	"lambda.h"
+
+1477784844 /shared/Dropbox/lambda/hoare.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1479601906 /shared/Dropbox/lambda/lambda.h
+
+1476940708 source:/shared/Dropbox/lambda/lambda.c
+	<stdio.h>
+	"hoare.h"
+	"lambda.h"
+
+1503526274 source:/shared/Dropbox/code/lambda/newton.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"hoare.h"
+	"lambda.h"
+
+1503526047 /shared/Dropbox/code/lambda/hoare.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1493078250 /shared/Dropbox/code/lambda/lambda.h
+

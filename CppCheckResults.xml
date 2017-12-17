@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results>
+    <error file="main_lambda.c" line="23" id="invalidPrintfArgType_uint" severity="style" msg="%u in format string (no. 2) requires &apos;unsigned int&apos; but the argument type is &apos;signed int&apos;." />
+    <error file="main_lambda.c" line="25" id="invalidPrintfArgType_sint" severity="style" msg="%i in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;signed int *&apos;." />
+    <error file="main_lambda.c" line="31" id="invalidPrintfArgType_sint" severity="style" msg="%i in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;signed int *&apos;." />
+    <error file="main_lambda.c" line="39" id="invalidPrintfArgType_float" severity="style" msg="%f in format string (no. 1) requires &apos;double&apos; but the argument type is &apos;float *&apos;." />
+    <error file="main_lambda.c" line="43" id="invalidPrintfArgType_float" severity="style" msg="%f in format string (no. 1) requires &apos;double&apos; but the argument type is &apos;float *&apos;." />
+    <error file="main_lambda.c" line="47" id="invalidPrintfArgType_float" severity="style" msg="%f in format string (no. 1) requires &apos;double&apos; but the argument type is &apos;float *&apos;." />
+    <error file="main_lambda.c" line="97" id="invalidPrintfArgType_sint" severity="style" msg="%i in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;signed int *&apos;." />
+    <error file="main_lambda.c" line="98" id="invalidPrintfArgType_sint" severity="style" msg="%i in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;signed int *&apos;." />
+    <error file="main_lambda.c" line="103" id="invalidPrintfArgType_sint" severity="style" msg="%i in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;signed int *&apos;." />
+    <error file="main_lambda.c" line="104" id="invalidPrintfArgType_sint" severity="style" msg="%i in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;signed int *&apos;." />
+    <error file="main_lambda.c" line="112" id="invalidPrintfArgType_sint" severity="style" msg="%li in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed long *&apos;." />
+    <error file="main_lambda.c" line="113" id="invalidPrintfArgType_sint" severity="style" msg="%li in format string (no. 1) requires &apos;long&apos; but the argument type is &apos;signed long *&apos;." />
+    <error file="main_lambda.c" line="54" id="unassignedVariable" severity="style" msg="Variable &apos;ff&apos; is not assigned a value." />
+    <error file="lambda.c" line="66" id="unusedFunction" severity="style" msg="The function &apos;l_aplicar&apos; is never used." />
+    <error id="missingIncludeSystem" severity="style" msg="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config." />
+</results>

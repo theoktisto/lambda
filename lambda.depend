@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1476765156 source:/home/vtheok/Escritorio/lambda/lambda.c
+	<stdio.h>
+	"hoare.h"
+	"lambda.h"
+
+1476661067 /home/vtheok/Escritorio/lambda/hoare.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1476749680 /home/vtheok/Escritorio/lambda/lambda.h
+
+1479601219 source:/shared/Dropbox/lambda/lambda.c
+	<stdio.h>
+	"hoare.h"
+	"lambda.h"
+
+1477784844 /shared/Dropbox/lambda/hoare.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1479601906 /shared/Dropbox/lambda/lambda.h
+
+1476898924 source:/home/vtheok/Dropbox/lambda/lambda.c
+	<stdio.h>
+	"hoare.h"
+	"lambda.h"
+
+1476765514 /home/vtheok/Dropbox/lambda/hoare.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1476765303 /home/vtheok/Dropbox/lambda/lambda.h
+
+1479603835 source:/shared/Dropbox/lambda/main_lambda.c
+	<stdio.h>
+	"hoare.h"
+	"lambda.h"
+
+1493072712 source:/shared/Dropbox/code/lambda/lambda.c
+	<stdio.h>
+	"hoare.h"
+	"lambda.h"
+
+1512867903 /shared/Dropbox/code/lambda/hoare.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1513046677 /shared/Dropbox/code/lambda/lambda.h
+
+1513042290 source:/shared/Dropbox/code/lambda/main_lambda.c
+	<stdio.h>
+	"hoare.h"
+	"lambda.h"
+
