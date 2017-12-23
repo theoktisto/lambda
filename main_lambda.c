@@ -6,14 +6,17 @@
 
 int main()
 {
-    int xx = 5;
-    int yy = 13;
+    int xx = 64;
+    int yy = 25;
     char aa[] = "0123456789";
     char bb[] = "abcdefghij";
+    // CompilerAssert(1<2);
+    printf("xx: %i,  yy: %i\n",xx,yy);
     SWAP(xx,yy);
-    printf("xx %i, yy %i\n",xx,yy);
+    printf("xx: %i,  yy: %i\n",xx,yy);
+    printf("aa: %s,  bb: %s\n",aa,bb);
     MEMSWAP(aa,bb);
-    printf("aa %s, bb %s\n",aa,bb);
+    printf("aa: %s,  bb: %s\n",aa,bb);
     int (*i_componer_f_gx) (I_FPTR_t, I_FPTR_t, int); // Componer funciones enteras
     // O también hacer la declaración directamente de componer funciones floats
     float (*f_componer_f_gx) (float (*)(float), float (*)(float), float);
@@ -59,11 +62,14 @@ int main()
 //                                       (I_FPTR_t h),
 //                                       return h );
 //
-    printf("\na.\nz=%i\n",({int z (int x)
-    {
-        return x+1;
-    } z;
-                           })(5));
+    printf("\na.\nz=%i\n",
+    ({
+        int z (int x)
+        {
+            return x+1;
+        }
+        z;
+    }) (5));
 
 //    int fun = ff(r)(3);
     printf( "call = %i (ints)\n",  call( ff(lambda( int, (int x), return 2*x)), 5) );
@@ -92,14 +98,14 @@ int main()
     printf( "aplicar(x) = %i (ints)\n", aplicar( lambda( int, (int x), return 3*x ), 4 ) (1) );
 
     int (*max) (int, int) = lambda1 (int, (int x, int y) { return x > y ? x : y;} );
-    printf( "\ne.\nlambda1(x) = %s \n", QUOTE( lambda1( int, (int x) { return x; } ) ) );
-    printf( "lambda1(x) = %s \n", VERBATIM( lambda1( int, (int x) { return x; } ) ) );
+    printf( "\ne.\nlambda1(x) = %s --> QUOTE\n", QUOTE( lambda1( int, (int x) { return x; } ) ) );
+    printf( "lambda1(x) = %s --> VERBATIM\n", VERBATIM( lambda1( int, (int x) { return x; } ) ) );
     printf( "lambda1(x) = %i (ints)\n", max (1, 2));
     printf( "lambda1(x) = %i (ints)\n", max (3, 5));
 
     I_FPTR_t ident = lambda2( int, (int x), {return x;} );
-    printf( "\nf.\nlambda2(x) = %s QUOTE\n", QUOTE( lambda2( int, (int x), {return x;} ) ) );
-    printf( "lambda2(x) = %s VERBATIM\n", VERBATIM( lambda2( int, (int x), {return x;} )));
+    printf( "\nf.\nlambda2(x) = %s --> QUOTE\n", QUOTE( lambda2( int, (int x), {return x;} ) ) );
+    printf( "lambda2(x) = %s --> VERBATIM\n", VERBATIM( lambda2( int, (int x), {return x;} )));
     printf( "lambda2(x) = %i (ints)\n", ident(4) );
     printf( "lambda2(x) = %i (ints)\n", ident(-7) );
     printf( "lambda2(x) = %i (ints)\n", lambda2( int, (int x), {return x;} )(3) );

@@ -8,11 +8,11 @@
  */
 
 
-int cn (I_FPTR_t f, int n, int x)
+int cn (I_FPTR_t f, int ntimes, int x)
 {
-    if (n==0)
+    if (ntimes==0)
         return x;
-    return cn(f, n-1, f(x));
+    return cn(f, ntimes-1, f(x));
 }
 
 //I_FPTR_t componer(I_FPTR_t f, I_FPTR_t g)
@@ -36,7 +36,7 @@ int (*i_compose( int (*f)(int), int (*g)(int) ) ) (int)
 
 // f(f(f(f(...(f(x))...)))), f aplicado n veces
 
-L_FPTR_t PURE autocall (L_FPTR_t f)
+L_FPTR_t _PURE autocall (L_FPTR_t f)
 {
     return componer(f, f);
 }
